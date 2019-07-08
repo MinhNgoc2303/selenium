@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13979" started-at="2019-07-07T10:40:23Z" finished-at="2019-07-07T10:40:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13979" started-at="2019-07-07T10:40:23Z" finished-at="2019-07-07T10:40:37Z">
+      <class name="SeleniumAPI.Session03_Exercise01">
+        <test-method status="PASS" signature="BeforeClass()[pri:0, instance:SeleniumAPI.Session03_Exercise01@6a024a67]" name="BeforeClass" is-config="true" duration-ms="4436" started-at="2019-07-07T17:40:23Z" finished-at="2019-07-07T17:40:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="Exercise01()[pri:0, instance:SeleniumAPI.Session03_Exercise01@6a024a67]" name="Exercise01" duration-ms="1817" started-at="2019-07-07T17:40:28Z" finished-at="2019-07-07T17:40:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Exercise01 -->
+        <test-method status="PASS" signature="Exercise02()[pri:0, instance:SeleniumAPI.Session03_Exercise01@6a024a67]" name="Exercise02" duration-ms="359" started-at="2019-07-07T17:40:30Z" finished-at="2019-07-07T17:40:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Exercise02 -->
+        <test-method status="PASS" signature="Exercise03()[pri:0, instance:SeleniumAPI.Session03_Exercise01@6a024a67]" name="Exercise03" duration-ms="532" started-at="2019-07-07T17:40:30Z" finished-at="2019-07-07T17:40:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Exercise03 -->
+        <test-method status="PASS" signature="Exercise04()[pri:0, instance:SeleniumAPI.Session03_Exercise01@6a024a67]" name="Exercise04" duration-ms="476" started-at="2019-07-07T17:40:31Z" finished-at="2019-07-07T17:40:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Exercise04 -->
+        <test-method status="PASS" signature="Exercise05()[pri:0, instance:SeleniumAPI.Session03_Exercise01@6a024a67]" name="Exercise05" duration-ms="4033" started-at="2019-07-07T17:40:31Z" finished-at="2019-07-07T17:40:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Exercise05 -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:SeleniumAPI.Session03_Exercise01@6a024a67]" name="AfterClass" is-config="true" duration-ms="2312" started-at="2019-07-07T17:40:35Z" finished-at="2019-07-07T17:40:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- SeleniumAPI.Session03_Exercise01 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
