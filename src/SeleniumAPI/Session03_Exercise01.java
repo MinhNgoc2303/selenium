@@ -31,9 +31,9 @@ public class Session03_Exercise01 {
 		WebElement btnShowMessage = driver.findElement(By.xpath("//button[text()='Show Message']"));
 		btnShowMessage.click();
 		String yourMess = driver.findElement(By.xpath("//label[text()='Your Message: ']")).getText().trim();
-		String nameMess = driver.findElement(By.xpath("//span[text()='Vu Nguyen']")).getText();
+		String nameMess = driver.findElement(By.xpath("//span[text()='" + user + "']")).getText();
 		String messDisplayed = yourMess + "  " + nameMess;
-		Assert.assertEquals("Your Message:  Vu Nguyen", messDisplayed);
+		Assert.assertEquals("Your Message:  " + user, messDisplayed);
 
 	}
 
@@ -55,7 +55,7 @@ public class Session03_Exercise01 {
 		int total = a + b;
 		String.valueOf(total);
 		String sum = textTotal + "  " + total;
-		Assert.assertEquals("Total a + b =  150", sum);
+		Assert.assertEquals("Total a + b =  " + total, sum);
 
 	}
 
@@ -116,9 +116,39 @@ public class Session03_Exercise01 {
 
 	}
 
+	@Test
+	public void Section3Exercise01() {
+		driver.get("https://www.seleniumeasy.com/test/basic-radiobutton-demo.html");
+		WebElement btnGetCheckedValue = driver.findElement(By.xpath("//button[@id='buttoncheck']"));
+		Assert.assertTrue(btnGetCheckedValue.isEnabled());
+	}
+
+	@Test
+	public void Section3Exercise02() {
+		driver.get("http://the-internet.herokuapp.com/dynamic_controls");
+		WebElement txtEnable = driver.findElement(By.xpath("//form[@id='input-example']//input"));
+		Assert.assertFalse(txtEnable.isEnabled());
+
+	}
+
+	@Test
+	public void Section3Exercise03() {
+		driver.get("http://demo.guru99.com/test/radio.html");
+		WebElement btnOption01 = driver.findElement(By.xpath("//input[@id='vfb-7-1']"));
+		if (!btnOption01.isSelected()) {
+			btnOption01.click();
+		}
+		Assert.assertTrue(btnOption01.isSelected());
+		WebElement checkboxCheck03 = driver.findElement(By.xpath("//input[@id='vfb-6-2']"));
+		if (!checkboxCheck03.isSelected()) {
+			checkboxCheck03.click();
+		}
+		Assert.assertTrue(checkboxCheck03.isSelected());
+	}
+
 	@AfterClass
 	public void AfterClass() {
-		 driver.close();
+		driver.close();
 
 	}
 
