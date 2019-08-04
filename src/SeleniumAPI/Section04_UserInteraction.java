@@ -8,6 +8,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -15,14 +17,18 @@ import org.testng.annotations.Test;
 
 public class Section04_UserInteraction {
 	WebDriver driver;
+	WebDriverWait wait;
+	
 	@BeforeClass
 	public void BeforeClass() {
 		System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		wait = new WebDriverWait(driver, 60);
+		
 	}
 
-	//@Test
+	@Test(invocationCount = 4)
 	public void Exercise01HoverAction() {
 		driver.get("https://www.24h.com.vn/");
 		WebElement hoverList = driver.findElement(By.xpath("//a[text()='Danh mục']"));
@@ -47,7 +53,7 @@ public class Section04_UserInteraction {
 		clickHold.release();
 		List<WebElement> numberSelected = driver.findElements(By.xpath("//ol[@id='selectable']//li[contains(@class,'ui-selected')]"));
 		int selected = numberSelected.size();
-		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//ol[@id='selectable']//li[contains(@class,'ui-selected')]")));
 		Assert.assertEquals(selected, 8);
 		System.out.println(selected);
 		}
@@ -56,18 +62,14 @@ public class Section04_UserInteraction {
 	public void RightClick() throws InterruptedException {
 		driver.get("http://demo.guru99.com/test/simple_context_menu.html");
 		WebElement btnRightClick = driver.findElement(By.xpath("//span[text()='right click me']"));
-		Thread.sleep(3000);
 		Actions rightClick = new Actions(driver);
 		rightClick.contextClick(btnRightClick).build().perform();
 		WebElement hoverClick = driver.findElement(By.xpath("//span[text()='Quit']"));
-		Thread.sleep(3000);
 		Actions hover = new Actions(driver);
 		hover.moveToElement(hoverClick).perform();
 		hoverClick.click();
 		String textAlert = driver.switchTo().alert().getText();
-		Thread.sleep(3000);
 		Assert.assertEquals(textAlert, "clicked: quit");
-		Thread.sleep(3000);
 		driver.switchTo().alert().accept();
 	
 	}
@@ -78,13 +80,11 @@ public class Section04_UserInteraction {
 		WebElement btnDoubleClick = driver.findElement(By.xpath("//button[text()='Double-Click Me To See Alert']"));
 		Actions doubleClick = new Actions(driver);
 		doubleClick.doubleClick(btnDoubleClick).perform();
-		Thread.sleep(3000);
 		String textDoubleClick = driver.switchTo().alert().getText();
 		String expectedResult = "You double clicked me.. Thank You..";
 		Assert.assertEquals(textDoubleClick, expectedResult);
-		Thread.sleep(3000);
+		wait.until(ExpectedConditions.alertIsPresent());
 		driver.switchTo().alert().accept();
-		Thread.sleep(3000);
 	}
 	
 	//@Test
@@ -94,13 +94,12 @@ public class Section04_UserInteraction {
 		WebElement target = driver.findElement(By.xpath("//div[@id='inner-dropzone']"));
 		Actions drag = new Actions(driver);
 		drag.clickAndHold(dragFrom).moveToElement(target).release(target).build().perform();
-		Thread.sleep(4000);
 		String droppedActual = dragFrom.getText();
 		String droppedExpected = "Dropped";
 		Assert.assertEquals(droppedActual, droppedExpected);
 	}
 	
-	@Test
+	//@Test
 	public void keyboardAction() {
 		driver.get("http://demo.guru99.com/v4/");
 		WebElement txtUserID = driver.findElement(By.xpath("//input[@name='uid']"));
@@ -118,7 +117,7 @@ public class Section04_UserInteraction {
 	}
 	@AfterClass
 	public void AfterClass() {
-		//driver.close();
+		driver.quit();;
 		
 	}
 }

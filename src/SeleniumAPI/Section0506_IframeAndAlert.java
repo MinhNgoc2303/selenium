@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -19,29 +20,25 @@ public class Section0506_IframeAndAlert {
 
 	@BeforeClass
 	public void BeforeClass() {
-//		System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
-//		driver = new ChromeDriver();
-		System.setProperty("webdriver.gecko.driver", ".\\driver\\geckodriver.exe");
-		driver = new FirefoxDriver();
+		System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
+		driver = new ChromeDriver();
+//		System.setProperty("webdriver.gecko.driver", ".\\driver\\geckodriver.exe");
+//		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 
 	}
 
 	//@Test
-	public void handleIframe01() {
-		// Navigate to page
+	public void TC01_handleIframe01() {
 		driver.get("http://the-internet.herokuapp.com/iframe");
-		// Input value"ngoc" at TinyMCE iframe
 		WebElement iframeTinyMCE = driver.findElement(By.xpath("//iframe[@id='mce_0_ifr']"));
 		driver.switchTo().frame(iframeTinyMCE);
 		WebElement editTable = driver.findElement(By.xpath("//body[@id='tinymce']"));
 		String textIframe = "Minh Ngoc";
 		editTable.clear();
 		editTable.sendKeys(textIframe);
-		// Verify text inputed
 		String expectedText = editTable.getText();
 		Assert.assertEquals(expectedText, textIframe);
-		// Out of iframe
 		driver.switchTo().defaultContent();
 		String txtTitle = driver.findElement(By.xpath("//h3[text()='An iFrame containing the TinyMCE WYSIWYG Editor']")).getText();
 		String expectedMsg = "An iFrame containing the TinyMCE WYSIWYG Editor";
@@ -49,71 +46,51 @@ public class Section0506_IframeAndAlert {
 	}
 
 	//@Test
-	public void handleIframe02() throws InterruptedException {
-		// Navigate to the page
+	public void TC02_handleIframe02() throws InterruptedException {
 		driver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_input_disabled");
-		// Check text box last name is disable
 		WebElement iframeResult = driver.findElement(By.xpath("//iframe[@id='iframeResult']"));
 		driver.switchTo().frame(iframeResult);
 		Thread.sleep(3000);
 		WebElement txtLast = driver.findElement(By.xpath("//input[@name='lname']"));
 		txtLast.isDisplayed();
-		// Input "ngoc" at First name
 		String firstName = "ngoc";
 		WebElement txtFirstName = driver.findElement(By.xpath("//input[@name='fname']"));
 		txtFirstName.sendKeys(firstName);
-		// Click submit button
 		WebElement btnSubmit = driver.findElement(By.xpath("//input[@type='submit']"));
 		btnSubmit.click();
-		// Verify "ngoc" displayed
 		Assert.assertEquals("fname=ngoc", "fname=" + firstName);
 
 	}
 
 	//@Test
-	public void handleWithWindowPopup() {
-		// Navigate to the page
+	public void TC03_handleWithWindowPopup() {
 		driver.get("https://www.seleniumeasy.com/test/window-popup-modal-demo.html");
-		// Click button "Follow On Twitter > Open new tab/window > Switch new window
 		WebElement txtFollow = driver.findElement(By.xpath("//a[contains(text(),'Follow On Twitter')]"));
 		txtFollow.click();
-		// Switch Twitter window and verify current title
 		String twitterTitle = "Selenium Easy (@seleniumeasy) on Twitter";
 		switchToWindowByTitle(twitterTitle);
-		// Close current title
 		driver.close();
-		// Switch to parent title and verify the title
 		String parentTitle = "Selenium Easy - Window Popup Modal Demo";
 		switchToWindowByTitle(parentTitle);
-		// Click button "Like us On Face"
 		WebElement btnLike = driver.findElement(By.xpath("//a[contains(text(),'Like us On Facebook')]"));
 		btnLike.click();
-		// Switch Face window
 		String faceTitle = "Selenium Easy - Trang chủ | Facebook";
 		switchToWindowByTitle(faceTitle);
-		// Close Face window
 		driver.close();
-		// Switch to parent window
 		switchToWindowByTitle(parentTitle);
-		// Verify parent title
 		String expectedTitle = "Selenium Easy - Window Popup Modal Demo";
 		Assert.assertEquals(parentTitle, expectedTitle);
 	}
 
 	//@Test
-	public void normalAlert() throws InterruptedException {
-		// Navigate Hero page
+	public void TC04_normalAlert() throws InterruptedException {
 		driver.get("http://the-internet.herokuapp.com/javascript_alerts");
-		// Click "JS Alert" button
 		WebElement btnJSAlert = driver.findElement(By.xpath("//button[text()='Click for JS Alert']"));
 		btnJSAlert.click();
-		// Verify message into Alert
 		Alert alert = driver.switchTo().alert();
 		String txtJSAlert = alert.getText();
 		String expectedJSAlert = "I am a JS Alert";
 		Assert.assertEquals(txtJSAlert, expectedJSAlert);
-		// Accept alert and verify result message
-		Thread.sleep(4000);
 		alert.accept();
 		String expectedResult = "You successfuly clicked an alert";
 		String txtResult = driver.findElement(By.xpath("//p[@id='result']")).getText();
@@ -121,18 +98,14 @@ public class Section0506_IframeAndAlert {
 	}
 
 	 //@Test
-	public void hanldleAlertConfirm() {
-		// Navigate to Hero site
+	public void TC05_hanldleAlertConfirm() {
 		driver.get("http://the-internet.herokuapp.com/javascript_alerts");
-		// Click JS confirm
 		WebElement btnJSConfirm = driver.findElement(By.xpath("//button[text()='Click for JS Confirm']"));
 		btnJSConfirm.click();
-		// Verify message display
 		Alert alert = driver.switchTo().alert();
 		String txtJSConfirm = alert.getText();
 		String expectedJSConfirm = "I am a JS Confirm";
 		Assert.assertEquals(txtJSConfirm, expectedJSConfirm);
-		// Cancel alert and verify message
 		alert.dismiss();
 		String txtCancel = driver.findElement(By.xpath("//p[@id='result']")).getText();
 		String expectedCancel = "You clicked: Cancel";
@@ -140,18 +113,14 @@ public class Section0506_IframeAndAlert {
 	}
 
 	//@Test
-	public void handleAlertPrompts() throws InterruptedException {
-		// Navigate to Hero site
+	public void TC06_handleAlertPrompts() throws InterruptedException {
 		driver.get("http://the-internet.herokuapp.com/javascript_alerts");
-		// Click JS prompt
 		WebElement btnJSPrompt = driver.findElement(By.xpath("//button[text()='Click for JS Prompt']"));
 		btnJSPrompt.click();
-		// Verify message display
 		Alert alert = driver.switchTo().alert();
 		String txtJSPrompt = alert.getText();
 		String expectedJSPrompt = "I am a JS prompt";
 		Assert.assertEquals(txtJSPrompt, expectedJSPrompt);
-		//Input text and verify message display
 		Thread.sleep(4000);
 		String lblPrompt = "MinhNgoc";
 		alert.sendKeys(lblPrompt);
@@ -163,27 +132,62 @@ public class Section0506_IframeAndAlert {
 	}
 	
 	@Test
-	public void handleJavaScript() {
-		//Navigate to Guru page
+	public void TC07_handleJavaScript() throws InterruptedException {
 		driver.get("http://live.guru99.com/");
-		// Click My acc link
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		
-		WebElement btnMyAcc = driver.findElement(By.xpath("//div[@class='footer-container']//a[text()='My Account']"));
-		js.executeScript("arguments[0].click();", btnMyAcc);
-		WebElement btnCreateAcc = driver.findElement(By.xpath("//span[text()='Create an Account']"));
-		js.executeScript("arguments[0].click();", btnCreateAcc);
+		WebElement MYACCOUNT_BTN = driver.findElement(By.xpath("//div[@class='footer-container']//a[text()='My Account']"));
+		js.executeScript("arguments[0].click();", MYACCOUNT_BTN);
+		WebElement CREATEACCOUNT_BTN = driver.findElement(By.xpath("//span[text()='Create an Account']"));
+		js.executeScript("arguments[0].click();", CREATEACCOUNT_BTN);
 		
+		String firstName = "ngoc";
+		String lastName = "phan";
+		String emailAddress = "mimitran" + randomemail() + "@gmail.com";
+		String password = "123456789";
+		WebElement FIRSTNAME_TXT = driver.findElement(By.xpath("//input[@id='firstname']"));
+		WebElement LASTNAME_TXT = driver.findElement(By.xpath("//input[@id='lastname']"));
+		WebElement EMAILADDRESS_TXT = driver.findElement(By.xpath("//input[@id='email_address']"));
+		WebElement PASSWORD_TXT = driver.findElement(By.xpath("//input[@id='password']"));
+		WebElement CONFIRMPASSWORD_TXT = driver.findElement(By.xpath("//input[@id='confirmation']"));
+		WebElement REGISTER_BTN = driver.findElement(By.xpath("//span[text()='Register']"));
 		
+		FIRSTNAME_TXT.sendKeys(firstName);
+		LASTNAME_TXT.sendKeys(lastName);
+		EMAILADDRESS_TXT.sendKeys(emailAddress);
+		PASSWORD_TXT.sendKeys(password);
+		CONFIRMPASSWORD_TXT.sendKeys(password);
+		js.executeScript("arguments[0].click();", REGISTER_BTN);
 		
+		Thread.sleep(4000);
+		String msgRegisterSuccess = driver.findElement(By.xpath("//span[text()='Thank you for registering with Main Website Store.']")).getText();
+		String expectedResult = "Thank you for registering with Main Website Store.";
+		Assert.assertEquals(msgRegisterSuccess, expectedResult);
+		
+		WebElement ACCOUNTHEADER_LBL = driver.findElement(By.xpath("//div[@class='page-header-container']//span[text()='Account']"));
+		js.executeScript("arguments[0].click();", ACCOUNTHEADER_LBL);
+		WebElement LOGOUT_LBL = driver.findElement(By.xpath("//a[text()='Log Out']"));
+		js.executeScript("arguments[0].click();", LOGOUT_LBL);
+		
+		WebElement MYACCOUNTL_LBL = driver.findElement(By.xpath("//div[@class='footer-container']//a[text()='My Account']"));
+		js.executeScript("arguments[0].click();", MYACCOUNTL_LBL);
+		WebElement EMAILADDRESSLOGIN_TXT = driver.findElement(By.xpath("//input[@id='email']"));
+		EMAILADDRESSLOGIN_TXT.sendKeys(emailAddress);
+		WebElement PASSWORDLOGIN_TXT = driver.findElement(By.xpath("//input[@id='pass']"));
+		PASSWORDLOGIN_TXT.sendKeys(password);
+		WebElement LOGIN_BTN = driver.findElement(By.xpath("//button[@id='send2']"));
+		js.executeScript("arguments[0].click();", LOGIN_BTN);
+		String curentTitle = driver.getCurrentUrl();
+		String expectedTitle = "http://live.guru99.com/index.php/customer/account/index/";
+		Assert.assertEquals(curentTitle, expectedTitle);
+
 	}
-	
 	
 	
 
 	@AfterClass
 	public void AfterClass() {
-		//driver.close();
+		driver.quit();
 
 	}
 

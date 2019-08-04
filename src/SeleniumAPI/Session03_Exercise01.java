@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class Session03_Exercise01 {
 	WebDriver driver;
 
-	@BeforeClass
+	@BeforeClass(groups= {"Chrome01","FF01"})
 	public void BeforeClass() {
 		System.setProperty("webdriver.chrome.driver", ".\\driver\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -21,7 +21,7 @@ public class Session03_Exercise01 {
 
 	}
 
-	@Test
+	@Test(groups="FF01")
 	public void Exercise01() {
 		driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
 
@@ -59,7 +59,7 @@ public class Session03_Exercise01 {
 
 	}
 
-	@Test
+	@Test(groups="FF01")
 	public void Exercise03() {
 		driver.get("https://www.seleniumeasy.com/test/basic-radiobutton-demo.html");
 
@@ -87,7 +87,7 @@ public class Session03_Exercise01 {
 
 	}
 
-	@Test
+	@Test(groups= {"Chrome01","FF01"})
 	public void Exercise04() {
 		driver.get("https://www.seleniumeasy.com/test/basic-checkbox-demo.html");
 		WebElement btnCheckbox = driver.findElement(By.xpath("//input[@id='isAgeSelected']"));
@@ -97,7 +97,7 @@ public class Session03_Exercise01 {
 		Assert.assertEquals(messCheckBox, "Success - Check box is checked");
 	}
 
-	@Test
+	@Test(groups="Chrome01")
 	public void Exercise05() {
 		driver.get("https://www.facebook.com/");
 		Select selectDay = new Select(driver.findElement(By.xpath("//select[@id='day']")));
@@ -116,7 +116,7 @@ public class Session03_Exercise01 {
 
 	}
 
-	@Test
+	@Test(groups="Chrome01")
 	public void Section3Exercise01() {
 		driver.get("https://www.seleniumeasy.com/test/basic-radiobutton-demo.html");
 		WebElement btnGetCheckedValue = driver.findElement(By.xpath("//button[@id='buttoncheck']"));
@@ -146,7 +146,7 @@ public class Session03_Exercise01 {
 		Assert.assertTrue(checkboxCheck03.isSelected());
 	}
 
-	@AfterClass
+	@AfterClass(groups= {"Chrome01","FF01"})
 	public void AfterClass() {
 		driver.close();
 
