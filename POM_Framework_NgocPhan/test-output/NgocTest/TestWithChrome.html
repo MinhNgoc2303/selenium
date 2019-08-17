@@ -1,0 +1,194 @@
+<html>
+<head>
+<title>TestNG:  TestWithChrome</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestWithChrome</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>23/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Aug 17 16:52:43 ICT 2019</td>
+</tr>
+<tr><td>Total time:</td><td>35 seconds (35797 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC01_CustomerIdEmpty()'><b>EC01_CustomerIdEmpty</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>1</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC02_CustomerIdNotNumberic()'><b>EC02_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>1</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC03_CustomerIdNotNumberic()'><b>EC03_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC04_CustomerIdNotNumberic()'><b>EC04_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC05_CustomerIdNotNumberic()'><b>EC05_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC06_CustomerIdNotNumberic()'><b>EC06_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC07_CustomerIdNotNumberic()'><b>EC07_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC08_CustomerIdNotNumberic()'><b>EC08_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC09_CustomerIdNotNumberic()'><b>EC09_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC10_CustomerIdNotNumberic()'><b>EC10_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC11_CustomerIdNotNumberic()'><b>EC11_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC12_CustomerIdNotNumberic()'><b>EC12_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC13_CustomerIdNotNumberic()'><b>EC13_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC14_CustomerIdNotNumberic()'><b>EC14_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC15_CustomerIdNotNumberic()'><b>EC15_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC16_CustomerIdNotNumberic()'><b>EC16_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC17_CustomerIdNotNumberic()'><b>EC17_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC18_CustomerIdNotNumberic()'><b>EC18_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC19_CustomerIdNotNumberic()'><b>EC19_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC20_CustomerIdNotNumberic()'><b>EC20_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC21_CustomerIdNotNumberic()'><b>EC21_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC22_CustomerIdNotNumberic()'><b>EC22_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+<tr>
+<td title='com.bankguru.scripts.EditCustomer.EC23_CustomerIdNotNumberic()'><b>EC23_CustomerIdNotNumberic</b><br>Test class: com.bankguru.scripts.EditCustomer</td>
+<td></td>
+<td>0</td>
+<td>com.bankguru.scripts.EditCustomer@60285225</td></tr>
+</table><p>
+</body>
+</html>

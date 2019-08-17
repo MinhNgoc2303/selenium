@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NgocTest" parallel="false">
+	<test name="TestWithChrome">
+	<parameter name ="browser" value="chrome" />
+	<parameter name ="version" value="76.0.3809.68" />
+	<parameter name ="url" value="http://demo.guru99.com/v4/" />
+	
+		<classes>
+<!-- 			<class name="com.bankguru.scripts.LoginScript" /> -->
+			<class name="com.bankguru.scripts.EditCustomer" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

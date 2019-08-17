@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NgocTest]">
+  <test thread-count="5" name="TestWithChrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="76.0.3809.68"/>
+    <parameter name="url" value="http://demo.guru99.com/v4/"/>
+    <classes>
+      <class name="com.bankguru.scripts.LoginScript">
+        <methods>
+          <include name="AfterClass"/>
+          <include name="BeforeClass"/>
+          <include name="NC13_StateFieldWithNumberic"/>
+        </methods>
+      </class> <!-- com.bankguru.scripts.LoginScript -->
+    </classes>
+  </test> <!-- TestWithChrome(failed) -->
+</suite> <!-- Failed suite [NgocTest] -->

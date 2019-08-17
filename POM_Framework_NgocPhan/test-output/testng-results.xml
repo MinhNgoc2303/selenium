@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="23" passed="23">
+  <reporter-output>
+  </reporter-output>
+  <suite name="NgocTest" duration-ms="35797" started-at="2019-08-17T09:52:43Z" finished-at="2019-08-17T09:53:19Z">
+    <groups>
+    </groups>
+    <test name="TestWithChrome" duration-ms="35797" started-at="2019-08-17T09:52:43Z" finished-at="2019-08-17T09:53:19Z">
+      <class name="com.bankguru.scripts.EditCustomer">
+        <test-method status="PASS" signature="BeforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="BeforeClass" is-config="true" duration-ms="14877" started-at="2019-08-17T09:52:43Z" finished-at="2019-08-17T09:52:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[76.0.3809.68]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://demo.guru99.com/v4/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="EC01_CustomerIdEmpty()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC01_CustomerIdEmpty" duration-ms="1375" started-at="2019-08-17T09:52:58Z" finished-at="2019-08-17T09:53:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC01_CustomerIdEmpty -->
+        <test-method status="PASS" signature="EC02_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC02_CustomerIdNotNumberic" duration-ms="1090" started-at="2019-08-17T09:53:00Z" finished-at="2019-08-17T09:53:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC02_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC03_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC03_CustomerIdNotNumberic" duration-ms="917" started-at="2019-08-17T09:53:01Z" finished-at="2019-08-17T09:53:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC03_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC04_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC04_CustomerIdNotNumberic" duration-ms="955" started-at="2019-08-17T09:53:02Z" finished-at="2019-08-17T09:53:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC04_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC05_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC05_CustomerIdNotNumberic" duration-ms="953" started-at="2019-08-17T09:53:03Z" finished-at="2019-08-17T09:53:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC05_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC06_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC06_CustomerIdNotNumberic" duration-ms="866" started-at="2019-08-17T09:53:04Z" finished-at="2019-08-17T09:53:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC06_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC07_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC07_CustomerIdNotNumberic" duration-ms="804" started-at="2019-08-17T09:53:04Z" finished-at="2019-08-17T09:53:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC07_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC08_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC08_CustomerIdNotNumberic" duration-ms="644" started-at="2019-08-17T09:53:05Z" finished-at="2019-08-17T09:53:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC08_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC09_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC09_CustomerIdNotNumberic" duration-ms="944" started-at="2019-08-17T09:53:06Z" finished-at="2019-08-17T09:53:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC09_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC10_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC10_CustomerIdNotNumberic" duration-ms="863" started-at="2019-08-17T09:53:07Z" finished-at="2019-08-17T09:53:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC10_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC11_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC11_CustomerIdNotNumberic" duration-ms="905" started-at="2019-08-17T09:53:08Z" finished-at="2019-08-17T09:53:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC11_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC12_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC12_CustomerIdNotNumberic" duration-ms="893" started-at="2019-08-17T09:53:09Z" finished-at="2019-08-17T09:53:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC12_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC13_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC13_CustomerIdNotNumberic" duration-ms="859" started-at="2019-08-17T09:53:09Z" finished-at="2019-08-17T09:53:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC13_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC14_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC14_CustomerIdNotNumberic" duration-ms="899" started-at="2019-08-17T09:53:10Z" finished-at="2019-08-17T09:53:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC14_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC15_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC15_CustomerIdNotNumberic" duration-ms="869" started-at="2019-08-17T09:53:11Z" finished-at="2019-08-17T09:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC15_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC16_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC16_CustomerIdNotNumberic" duration-ms="889" started-at="2019-08-17T09:53:12Z" finished-at="2019-08-17T09:53:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC16_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC17_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC17_CustomerIdNotNumberic" duration-ms="872" started-at="2019-08-17T09:53:13Z" finished-at="2019-08-17T09:53:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC17_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC18_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC18_CustomerIdNotNumberic" duration-ms="881" started-at="2019-08-17T09:53:14Z" finished-at="2019-08-17T09:53:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC18_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC19_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC19_CustomerIdNotNumberic" duration-ms="815" started-at="2019-08-17T09:53:15Z" finished-at="2019-08-17T09:53:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC19_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC20_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC20_CustomerIdNotNumberic" duration-ms="914" started-at="2019-08-17T09:53:16Z" finished-at="2019-08-17T09:53:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC20_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC21_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC21_CustomerIdNotNumberic" duration-ms="897" started-at="2019-08-17T09:53:16Z" finished-at="2019-08-17T09:53:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC21_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC22_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC22_CustomerIdNotNumberic" duration-ms="883" started-at="2019-08-17T09:53:17Z" finished-at="2019-08-17T09:53:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC22_CustomerIdNotNumberic -->
+        <test-method status="PASS" signature="EC23_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC23_CustomerIdNotNumberic" duration-ms="899" started-at="2019-08-17T09:53:18Z" finished-at="2019-08-17T09:53:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC23_CustomerIdNotNumberic -->
+      </class> <!-- com.bankguru.scripts.EditCustomer -->
+    </test> <!-- TestWithChrome -->
+  </suite> <!-- NgocTest -->
+</testng-results>
