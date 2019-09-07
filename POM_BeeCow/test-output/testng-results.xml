@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="NgocTest" duration-ms="11988" started-at="2019-08-29T14:01:00Z" finished-at="2019-08-29T14:01:12Z">
+    <groups>
+    </groups>
+    <test name="TestWithChrome" duration-ms="11988" started-at="2019-08-29T14:01:00Z" finished-at="2019-08-29T14:01:12Z">
+      <class name="com.beecow.scripts.LoginBeeCowScripts">
+        <test-method status="PASS" signature="BeforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.beecow.scripts.LoginBeeCowScripts@29b5cd00]" name="BeforeClass" is-config="true" duration-ms="10366" started-at="2019-08-29T14:01:00Z" finished-at="2019-08-29T14:01:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[76.0.3809.132]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://www.beecow.com/market]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="allFieldsEmpty()[pri:0, instance:com.beecow.scripts.LoginBeeCowScripts@29b5cd00]" name="allFieldsEmpty" duration-ms="1604" started-at="2019-08-29T14:01:11Z" finished-at="2019-08-29T14:01:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- allFieldsEmpty -->
+      </class> <!-- com.beecow.scripts.LoginBeeCowScripts -->
+    </test> <!-- TestWithChrome -->
+  </suite> <!-- NgocTest -->
+</testng-results>

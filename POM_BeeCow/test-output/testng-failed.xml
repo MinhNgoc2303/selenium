@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [NgocTest]">
+  <test thread-count="5" name="TestWithChrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="76.0.3809.132"/>
+    <parameter name="url" value="https://www.beecow.com/market"/>
+    <classes>
+      <class name="com.beecow.scripts.LoginBeeCowScripts">
+        <methods>
+          <include name="allFieldsEmpty"/>
+          <include name="BeforeClass"/>
+        </methods>
+      </class> <!-- com.beecow.scripts.LoginBeeCowScripts -->
+    </classes>
+  </test> <!-- TestWithChrome(failed) -->
+</suite> <!-- Failed suite [NgocTest] -->
