@@ -3,6 +3,7 @@ package com.bankguru.actions;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
+import com.bankguru.ui.EditCustomerPageUI;
 import com.bankguru.ui.NewCustomerPageUI;
 
 import common.CommonFunctions;
@@ -41,6 +42,10 @@ public class NewCustomerPage extends CommonFunctions {
 		return getTextElement(NewCustomerPageUI.ADDRESS_LBL);
 	}
 	
+	public void inputAddress(String value) {
+		waitForElementVisible(NewCustomerPageUI.ADDRESS_TXT);
+		inputElement(NewCustomerPageUI.ADDRESS_TXT, value);
+	}
 	
 	public void pressKeyToCityField(Keys key) {
 		waitForElementVisible(NewCustomerPageUI.CITYFIELD_TXT);
@@ -120,5 +125,25 @@ public class NewCustomerPage extends CommonFunctions {
 		waitForElementVisible(NewCustomerPageUI.EMAILFIELD_TXT);
 		inputElement(NewCustomerPageUI.EMAILFIELD_TXT, value);
 	}
+	public void inputDateOfBirth(String value) {
+		waitForElementVisible(NewCustomerPageUI.DATEOFBIRTH_TXT);
+		removeAttributeElement(NewCustomerPageUI.DATEOFBIRTH_TXT, "type");
+		inputElement(NewCustomerPageUI.DATEOFBIRTH_TXT, value);
+	}
 
+	public void inputPasswordNewCustomer(String value) {
+		waitForElementVisible(NewCustomerPageUI.PASSWORDNEWCUSTOMER_TXT);
+		inputElement(NewCustomerPageUI.PASSWORDNEWCUSTOMER_TXT, value);
+	}
+	
+	public void clickSubmitNewCustomer() {
+		waitForElementVisible(NewCustomerPageUI.SUBMITNEWCUSTOMER_BTN);
+		clickToElement(NewCustomerPageUI.SUBMITNEWCUSTOMER_BTN);
+	}
+	
+	public String getCustomerId() {
+		waitForElementVisible(NewCustomerPageUI.CUSTOMERID_LBL);
+		return getTextElement(NewCustomerPageUI.CUSTOMERID_LBL);
+		
+	}
 }

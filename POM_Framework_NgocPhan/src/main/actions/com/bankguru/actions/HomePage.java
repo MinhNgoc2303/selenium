@@ -3,7 +3,6 @@ package com.bankguru.actions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import com.bankguru.scripts.EditCustomer;
 import com.bankguru.ui.HomePageUI;
 
 import common.CommonFunctions;

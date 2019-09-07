@@ -22,9 +22,12 @@ public class NewCustomerPageUI {
 	public static String EMAILFIELD_TXT = "//input[@name='emailid']";
 	public static String EMAILFIELD_LBL = "//label[@id='message9']";
 	
+	public static String DATEOFBIRTH_TXT = "//input[@name='dob']";
 	
+	public static String PASSWORDNEWCUSTOMER_TXT ="//input[@name='password']";
 	
+	public static String SUBMITNEWCUSTOMER_BTN="//input[@name='sub']";
 	
-	
+	public static String CUSTOMERID_LBL="//td[contains(text(), 'Customer ID')]/following-sibling::td";
 	
 }

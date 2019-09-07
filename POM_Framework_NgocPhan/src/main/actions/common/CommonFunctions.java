@@ -222,10 +222,10 @@ public class CommonFunctions {
 		js.executeScript("$(locator).css('border', '4px solid blue'");
 	}
 
-	public Object removeAttributeElement(String locator, String attribute) {
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		// WebElement element = driver.findElement(By.xpath(locator));
-		return js.executeScript("$(locator).removeAttr(attribute)");
+	public void removeAttributeElement(String locator, String attribute) {
+		JavascriptExecutor javascript = (JavascriptExecutor) driver;
+		WebElement element = driver.findElement(By.xpath(locator));
+		javascript.executeScript("arguments[0].removeAttribute('" + attribute + "')", element);
 	}
 
 	public void waitForElementPresence(String locator) {

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="23" passed="23">
+<testng-results skipped="0" failed="0" ignored="0" total="46" passed="46">
   <reporter-output>
   </reporter-output>
-  <suite name="NgocTest" duration-ms="35797" started-at="2019-08-17T09:52:43Z" finished-at="2019-08-17T09:53:19Z">
+  <suite name="NgocTest" duration-ms="123386" started-at="2019-08-30T02:26:16Z" finished-at="2019-08-30T02:28:19Z">
     <groups>
     </groups>
-    <test name="TestWithChrome" duration-ms="35797" started-at="2019-08-17T09:52:43Z" finished-at="2019-08-17T09:53:19Z">
-      <class name="com.bankguru.scripts.EditCustomer">
-        <test-method status="PASS" signature="BeforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="BeforeClass" is-config="true" duration-ms="14877" started-at="2019-08-17T09:52:43Z" finished-at="2019-08-17T09:52:58Z">
+    <test name="TestWithChrome" duration-ms="123386" started-at="2019-08-30T02:26:16Z" finished-at="2019-08-30T02:28:19Z">
+      <class name="com.bankguru.scripts.EditCustomerScript">
+        <test-method status="PASS" signature="BeforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeClass" is-config="true" duration-ms="9051" started-at="2019-08-30T02:26:56Z" finished-at="2019-08-30T02:27:05Z">
           <params>
             <param index="0">
               <value>
@@ -28,99 +28,429 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeClass -->
-        <test-method status="PASS" signature="EC01_CustomerIdEmpty()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC01_CustomerIdEmpty" duration-ms="1375" started-at="2019-08-17T09:52:58Z" finished-at="2019-08-17T09:53:00Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="992" started-at="2019-08-30T02:27:05Z" finished-at="2019-08-30T02:27:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC01_CustomerIdEmpty()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC01_CustomerIdEmpty" duration-ms="214" started-at="2019-08-30T02:27:06Z" finished-at="2019-08-30T02:27:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EC01_CustomerIdEmpty -->
-        <test-method status="PASS" signature="EC02_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC02_CustomerIdNotNumberic" duration-ms="1090" started-at="2019-08-17T09:53:00Z" finished-at="2019-08-17T09:53:01Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="516" started-at="2019-08-30T02:27:07Z" finished-at="2019-08-30T02:27:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC02_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC02_CustomerIdNotNumberic" duration-ms="158" started-at="2019-08-30T02:27:07Z" finished-at="2019-08-30T02:27:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EC02_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC03_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC03_CustomerIdNotNumberic" duration-ms="917" started-at="2019-08-17T09:53:01Z" finished-at="2019-08-17T09:53:02Z">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="5558" started-at="2019-08-30T02:27:07Z" finished-at="2019-08-30T02:27:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC03_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC04_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC04_CustomerIdNotNumberic" duration-ms="955" started-at="2019-08-17T09:53:02Z" finished-at="2019-08-17T09:53:03Z">
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC03_CustomerIdhaveSpecialCharacter()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC03_CustomerIdhaveSpecialCharacter" duration-ms="160" started-at="2019-08-30T02:27:13Z" finished-at="2019-08-30T02:27:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC04_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC05_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC05_CustomerIdNotNumberic" duration-ms="953" started-at="2019-08-17T09:53:03Z" finished-at="2019-08-17T09:53:04Z">
+        </test-method> <!-- EC03_CustomerIdhaveSpecialCharacter -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="5834" started-at="2019-08-30T02:27:13Z" finished-at="2019-08-30T02:27:19Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC05_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC06_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC06_CustomerIdNotNumberic" duration-ms="866" started-at="2019-08-17T09:53:04Z" finished-at="2019-08-17T09:53:04Z">
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC04_ValidCustomerId()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC04_ValidCustomerId" duration-ms="5973" started-at="2019-08-30T02:27:19Z" finished-at="2019-08-30T02:27:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC06_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC07_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC07_CustomerIdNotNumberic" duration-ms="804" started-at="2019-08-17T09:53:04Z" finished-at="2019-08-17T09:53:05Z">
+        </test-method> <!-- EC04_ValidCustomerId -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="5561" started-at="2019-08-30T02:27:25Z" finished-at="2019-08-30T02:27:30Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC07_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC08_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC08_CustomerIdNotNumberic" duration-ms="644" started-at="2019-08-17T09:53:05Z" finished-at="2019-08-17T09:53:06Z">
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC08_AddressIsEmpty()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC08_AddressIsEmpty" duration-ms="6640" started-at="2019-08-30T02:27:30Z" finished-at="2019-08-30T02:27:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC08_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC09_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC09_CustomerIdNotNumberic" duration-ms="944" started-at="2019-08-17T09:53:06Z" finished-at="2019-08-17T09:53:07Z">
+        </test-method> <!-- EC08_AddressIsEmpty -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="5731" started-at="2019-08-30T02:27:37Z" finished-at="2019-08-30T02:27:43Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC09_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC10_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC10_CustomerIdNotNumberic" duration-ms="863" started-at="2019-08-17T09:53:07Z" finished-at="2019-08-17T09:53:08Z">
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC09_CityIsEmpty()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC09_CityIsEmpty" duration-ms="6219" started-at="2019-08-30T02:27:43Z" finished-at="2019-08-30T02:27:49Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC10_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC11_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC11_CustomerIdNotNumberic" duration-ms="905" started-at="2019-08-17T09:53:08Z" finished-at="2019-08-17T09:53:09Z">
+        </test-method> <!-- EC09_CityIsEmpty -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="4555" started-at="2019-08-30T02:27:49Z" finished-at="2019-08-30T02:27:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC11_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC12_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC12_CustomerIdNotNumberic" duration-ms="893" started-at="2019-08-17T09:53:09Z" finished-at="2019-08-17T09:53:09Z">
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC10_CityNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC10_CityNotNumberic" duration-ms="1377" started-at="2019-08-30T02:27:54Z" finished-at="2019-08-30T02:27:55Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC12_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC13_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC13_CustomerIdNotNumberic" duration-ms="859" started-at="2019-08-17T09:53:09Z" finished-at="2019-08-17T09:53:10Z">
+        </test-method> <!-- EC10_CityNotNumberic -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="591" started-at="2019-08-30T02:27:55Z" finished-at="2019-08-30T02:27:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC13_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC14_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC14_CustomerIdNotNumberic" duration-ms="899" started-at="2019-08-17T09:53:10Z" finished-at="2019-08-17T09:53:11Z">
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC11_CityCannotHaveSpecialCharacter()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC11_CityCannotHaveSpecialCharacter" duration-ms="1343" started-at="2019-08-30T02:27:56Z" finished-at="2019-08-30T02:27:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC14_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC15_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC15_CustomerIdNotNumberic" duration-ms="869" started-at="2019-08-17T09:53:11Z" finished-at="2019-08-17T09:53:12Z">
+        </test-method> <!-- EC11_CityCannotHaveSpecialCharacter -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="504" started-at="2019-08-30T02:27:57Z" finished-at="2019-08-30T02:27:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC15_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC16_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC16_CustomerIdNotNumberic" duration-ms="889" started-at="2019-08-17T09:53:12Z" finished-at="2019-08-17T09:53:13Z">
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC12_StateFieldEmpty()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC12_StateFieldEmpty" duration-ms="1320" started-at="2019-08-30T02:27:57Z" finished-at="2019-08-30T02:27:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC16_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC17_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC17_CustomerIdNotNumberic" duration-ms="872" started-at="2019-08-17T09:53:13Z" finished-at="2019-08-17T09:53:14Z">
+        </test-method> <!-- EC12_StateFieldEmpty -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="572" started-at="2019-08-30T02:27:59Z" finished-at="2019-08-30T02:27:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC17_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC18_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC18_CustomerIdNotNumberic" duration-ms="881" started-at="2019-08-17T09:53:14Z" finished-at="2019-08-17T09:53:15Z">
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC13_StateWithNumeric()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC13_StateWithNumeric" duration-ms="1339" started-at="2019-08-30T02:27:59Z" finished-at="2019-08-30T02:28:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC18_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC19_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC19_CustomerIdNotNumberic" duration-ms="815" started-at="2019-08-17T09:53:15Z" finished-at="2019-08-17T09:53:16Z">
+        </test-method> <!-- EC13_StateWithNumeric -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="620" started-at="2019-08-30T02:28:01Z" finished-at="2019-08-30T02:28:01Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC19_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC20_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC20_CustomerIdNotNumberic" duration-ms="914" started-at="2019-08-17T09:53:16Z" finished-at="2019-08-17T09:53:16Z">
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC14_StateFieldWithSpecialCharacter()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC14_StateFieldWithSpecialCharacter" duration-ms="1542" started-at="2019-08-30T02:28:01Z" finished-at="2019-08-30T02:28:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC20_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC21_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC21_CustomerIdNotNumberic" duration-ms="897" started-at="2019-08-17T09:53:16Z" finished-at="2019-08-17T09:53:17Z">
+        </test-method> <!-- EC14_StateFieldWithSpecialCharacter -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="508" started-at="2019-08-30T02:28:03Z" finished-at="2019-08-30T02:28:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC21_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC22_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC22_CustomerIdNotNumberic" duration-ms="883" started-at="2019-08-17T09:53:17Z" finished-at="2019-08-17T09:53:18Z">
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC15_PINMustBeNumeric()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC15_PINMustBeNumeric" duration-ms="1415" started-at="2019-08-30T02:28:03Z" finished-at="2019-08-30T02:28:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC22_CustomerIdNotNumberic -->
-        <test-method status="PASS" signature="EC23_CustomerIdNotNumberic()[pri:0, instance:com.bankguru.scripts.EditCustomer@60285225]" name="EC23_CustomerIdNotNumberic" duration-ms="899" started-at="2019-08-17T09:53:18Z" finished-at="2019-08-17T09:53:19Z">
+        </test-method> <!-- EC15_PINMustBeNumeric -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="609" started-at="2019-08-30T02:28:05Z" finished-at="2019-08-30T02:28:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- EC23_CustomerIdNotNumberic -->
-      </class> <!-- com.bankguru.scripts.EditCustomer -->
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC16_PINFieldEmpty()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC16_PINFieldEmpty" duration-ms="1252" started-at="2019-08-30T02:28:05Z" finished-at="2019-08-30T02:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC16_PINFieldEmpty -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="901" started-at="2019-08-30T02:28:07Z" finished-at="2019-08-30T02:28:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC17_PINMustHave6Digits()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC17_PINMustHave6Digits" duration-ms="1232" started-at="2019-08-30T02:28:07Z" finished-at="2019-08-30T02:28:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC17_PINMustHave6Digits -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="586" started-at="2019-08-30T02:28:09Z" finished-at="2019-08-30T02:28:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC18_PINWithSpecialCharacter()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC18_PINWithSpecialCharacter" duration-ms="1342" started-at="2019-08-30T02:28:09Z" finished-at="2019-08-30T02:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC18_PINWithSpecialCharacter -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="607" started-at="2019-08-30T02:28:11Z" finished-at="2019-08-30T02:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC19_TelephoneWithEmpty()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC19_TelephoneWithEmpty" duration-ms="1511" started-at="2019-08-30T02:28:11Z" finished-at="2019-08-30T02:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC19_TelephoneWithEmpty -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="543" started-at="2019-08-30T02:28:13Z" finished-at="2019-08-30T02:28:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC20_TelephoneWithSpecialCharacter()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC20_TelephoneWithSpecialCharacter" duration-ms="1340" started-at="2019-08-30T02:28:13Z" finished-at="2019-08-30T02:28:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC20_TelephoneWithSpecialCharacter -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="820" started-at="2019-08-30T02:28:15Z" finished-at="2019-08-30T02:28:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC21_EmailEmpty()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC21_EmailEmpty" duration-ms="1248" started-at="2019-08-30T02:28:15Z" finished-at="2019-08-30T02:28:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC21_EmailEmpty -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="BeforeMethod" is-config="true" duration-ms="608" started-at="2019-08-30T02:28:17Z" finished-at="2019-08-30T02:28:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="EC22_EmailWithInvalidFormat()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="EC22_EmailWithInvalidFormat" duration-ms="1400" started-at="2019-08-30T02:28:17Z" finished-at="2019-08-30T02:28:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EC22_EmailWithInvalidFormat -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:com.bankguru.scripts.EditCustomerScript@5442a311]" name="AfterClass" is-config="true" duration-ms="656" started-at="2019-08-30T02:28:19Z" finished-at="2019-08-30T02:28:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.bankguru.scripts.EditCustomerScript -->
+      <class name="com.bankguru.scripts.NewCustomerScript">
+        <test-method status="PASS" signature="BeforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeClass" is-config="true" duration-ms="9198" started-at="2019-08-30T02:26:30Z" finished-at="2019-08-30T02:26:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[76.0.3809.68]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://demo.guru99.com/v4/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="791" started-at="2019-08-30T02:26:39Z" finished-at="2019-08-30T02:26:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC01_NewCustomer01()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC01_NewCustomer01" duration-ms="204" started-at="2019-08-30T02:26:40Z" finished-at="2019-08-30T02:26:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC01_NewCustomer01 -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="342" started-at="2019-08-30T02:26:40Z" finished-at="2019-08-30T02:26:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC02_NumericCase()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC02_NumericCase" duration-ms="209" started-at="2019-08-30T02:26:40Z" finished-at="2019-08-30T02:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC02_NumericCase -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="273" started-at="2019-08-30T02:26:41Z" finished-at="2019-08-30T02:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC03_SpecialCharacters()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC03_SpecialCharacters" duration-ms="221" started-at="2019-08-30T02:26:41Z" finished-at="2019-08-30T02:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC03_SpecialCharacters -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="274" started-at="2019-08-30T02:26:41Z" finished-at="2019-08-30T02:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC04_FirstCharacterBlank()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC04_FirstCharacterBlank" duration-ms="198" started-at="2019-08-30T02:26:41Z" finished-at="2019-08-30T02:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC04_FirstCharacterBlank -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="279" started-at="2019-08-30T02:26:41Z" finished-at="2019-08-30T02:26:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC05_AddressEmplty()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC05_AddressEmplty" duration-ms="213" started-at="2019-08-30T02:26:42Z" finished-at="2019-08-30T02:26:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC05_AddressEmplty -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="380" started-at="2019-08-30T02:26:42Z" finished-at="2019-08-30T02:26:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC06_AddressHaveSpace()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC06_AddressHaveSpace" duration-ms="161" started-at="2019-08-30T02:26:42Z" finished-at="2019-08-30T02:26:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC06_AddressHaveSpace -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="275" started-at="2019-08-30T02:26:43Z" finished-at="2019-08-30T02:26:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC08_CityFiledEmpty()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC08_CityFiledEmpty" duration-ms="193" started-at="2019-08-30T02:26:43Z" finished-at="2019-08-30T02:26:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC08_CityFiledEmpty -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="365" started-at="2019-08-30T02:26:43Z" finished-at="2019-08-30T02:26:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC09_CityWithNumberic()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC09_CityWithNumberic" duration-ms="197" started-at="2019-08-30T02:26:43Z" finished-at="2019-08-30T02:26:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC09_CityWithNumberic -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="270" started-at="2019-08-30T02:26:44Z" finished-at="2019-08-30T02:26:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC10_CityWithSpecialCharacter()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC10_CityWithSpecialCharacter" duration-ms="216" started-at="2019-08-30T02:26:44Z" finished-at="2019-08-30T02:26:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC10_CityWithSpecialCharacter -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="280" started-at="2019-08-30T02:26:44Z" finished-at="2019-08-30T02:26:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC11_CityHaveSpace()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC11_CityHaveSpace" duration-ms="191" started-at="2019-08-30T02:26:44Z" finished-at="2019-08-30T02:26:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC11_CityHaveSpace -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="389" started-at="2019-08-30T02:26:45Z" finished-at="2019-08-30T02:26:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC12_StateFieldEmpty()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC12_StateFieldEmpty" duration-ms="164" started-at="2019-08-30T02:26:45Z" finished-at="2019-08-30T02:26:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC12_StateFieldEmpty -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="275" started-at="2019-08-30T02:26:45Z" finished-at="2019-08-30T02:26:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC13_StateFieldWithNumberic()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC13_StateFieldWithNumberic" duration-ms="199" started-at="2019-08-30T02:26:45Z" finished-at="2019-08-30T02:26:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC13_StateFieldWithNumberic -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="366" started-at="2019-08-30T02:26:46Z" finished-at="2019-08-30T02:26:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC14_StateFieldWithSpecialCharacter()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC14_StateFieldWithSpecialCharacter" duration-ms="214" started-at="2019-08-30T02:26:46Z" finished-at="2019-08-30T02:26:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC14_StateFieldWithSpecialCharacter -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="267" started-at="2019-08-30T02:26:46Z" finished-at="2019-08-30T02:26:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC15_SateFieldWithSpace()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC15_SateFieldWithSpace" duration-ms="194" started-at="2019-08-30T02:26:46Z" finished-at="2019-08-30T02:26:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC15_SateFieldWithSpace -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="380" started-at="2019-08-30T02:26:47Z" finished-at="2019-08-30T02:26:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC16_PINFiledWithNumberic()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC16_PINFiledWithNumberic" duration-ms="219" started-at="2019-08-30T02:26:47Z" finished-at="2019-08-30T02:26:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC16_PINFiledWithNumberic -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="352" started-at="2019-08-30T02:26:47Z" finished-at="2019-08-30T02:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC17_PinFieldEmpty()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC17_PinFieldEmpty" duration-ms="184" started-at="2019-08-30T02:26:48Z" finished-at="2019-08-30T02:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC17_PinFieldEmpty -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="414" started-at="2019-08-30T02:26:48Z" finished-at="2019-08-30T02:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC18_PinFieldHave6Digits()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC18_PinFieldHave6Digits" duration-ms="199" started-at="2019-08-30T02:26:48Z" finished-at="2019-08-30T02:26:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC18_PinFieldHave6Digits -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="373" started-at="2019-08-30T02:26:48Z" finished-at="2019-08-30T02:26:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC19_PinFieldWithSpecialCharcter()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC19_PinFieldWithSpecialCharcter" duration-ms="197" started-at="2019-08-30T02:26:49Z" finished-at="2019-08-30T02:26:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC19_PinFieldWithSpecialCharcter -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="363" started-at="2019-08-30T02:26:49Z" finished-at="2019-08-30T02:26:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC20_PinFieldWithSpace()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC20_PinFieldWithSpace" duration-ms="168" started-at="2019-08-30T02:26:49Z" finished-at="2019-08-30T02:26:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC20_PinFieldWithSpace -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="409" started-at="2019-08-30T02:26:49Z" finished-at="2019-08-30T02:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC21_TelephoneFieldEmpty()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC21_TelephoneFieldEmpty" duration-ms="252" started-at="2019-08-30T02:26:50Z" finished-at="2019-08-30T02:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC21_TelephoneFieldEmpty -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="383" started-at="2019-08-30T02:26:50Z" finished-at="2019-08-30T02:26:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC22_TelephoneFieldHaveSpace()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC22_TelephoneFieldHaveSpace" duration-ms="171" started-at="2019-08-30T02:26:50Z" finished-at="2019-08-30T02:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC22_TelephoneFieldHaveSpace -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="367" started-at="2019-08-30T02:26:51Z" finished-at="2019-08-30T02:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC25_TelephoneFieldWithSpecialCharacter()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC25_TelephoneFieldWithSpecialCharacter" duration-ms="191" started-at="2019-08-30T02:26:51Z" finished-at="2019-08-30T02:26:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC25_TelephoneFieldWithSpecialCharacter -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="369" started-at="2019-08-30T02:26:51Z" finished-at="2019-08-30T02:26:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC26_EmailFieldEmpty()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC26_EmailFieldEmpty" duration-ms="187" started-at="2019-08-30T02:26:52Z" finished-at="2019-08-30T02:26:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC26_EmailFieldEmpty -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="374" started-at="2019-08-30T02:26:52Z" finished-at="2019-08-30T02:26:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC27_EmailFieldWithIncorrectFormat()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC27_EmailFieldWithIncorrectFormat" duration-ms="222" started-at="2019-08-30T02:26:52Z" finished-at="2019-08-30T02:26:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC27_EmailFieldWithIncorrectFormat -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="306" started-at="2019-08-30T02:26:52Z" finished-at="2019-08-30T02:26:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC29_EmailFieldWithSpace()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC29_EmailFieldWithSpace" duration-ms="211" started-at="2019-08-30T02:26:53Z" finished-at="2019-08-30T02:26:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC29_EmailFieldWithSpace -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="BeforeMethod" is-config="true" duration-ms="308" started-at="2019-08-30T02:26:53Z" finished-at="2019-08-30T02:26:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="NC30_CreateNewCustomer()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="NC30_CreateNewCustomer" duration-ms="2554" started-at="2019-08-30T02:26:53Z" finished-at="2019-08-30T02:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NC30_CreateNewCustomer -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:com.bankguru.scripts.NewCustomerScript@53b32d7]" name="AfterClass" is-config="true" duration-ms="639" started-at="2019-08-30T02:26:56Z" finished-at="2019-08-30T02:26:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.bankguru.scripts.NewCustomerScript -->
+      <class name="com.bankguru.scripts.RegisterNewAccountScript">
+        <test-method status="PASS" signature="BeforeClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.bankguru.scripts.RegisterNewAccountScript@343f4d3d]" name="BeforeClass" is-config="true" duration-ms="8822" started-at="2019-08-30T02:26:16Z" finished-at="2019-08-30T02:26:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[76.0.3809.68]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://demo.guru99.com/v4/]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method status="PASS" signature="RegisterScript()[pri:0, instance:com.bankguru.scripts.RegisterNewAccountScript@343f4d3d]" name="RegisterScript" duration-ms="4314" started-at="2019-08-30T02:26:25Z" finished-at="2019-08-30T02:26:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterScript -->
+        <test-method status="PASS" signature="AfterClass()[pri:0, instance:com.bankguru.scripts.RegisterNewAccountScript@343f4d3d]" name="AfterClass" is-config="true" duration-ms="664" started-at="2019-08-30T02:26:29Z" finished-at="2019-08-30T02:26:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterClass -->
+      </class> <!-- com.bankguru.scripts.RegisterNewAccountScript -->
     </test> <!-- TestWithChrome -->
   </suite> <!-- NgocTest -->
 </testng-results>

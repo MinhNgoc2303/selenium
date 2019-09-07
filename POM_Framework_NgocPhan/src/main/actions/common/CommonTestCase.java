@@ -1,5 +1,7 @@
 package common;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
@@ -7,6 +9,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 
+import com.google.gson.Gson;
+
+import ObjectPageJson.JsonData;
 import io.github.bonigarcia.wdm.ChromeDriverManager;
 import io.github.bonigarcia.wdm.FirefoxDriverManager;
 
@@ -47,4 +52,32 @@ public class CommonTestCase {
 	public void asserEqual(String actual, String expected) {
 		Assert.assertEquals(actual, expected);
 	}
+	
+	public static String readFile(String filename) {
+		String result = "";
+		try {
+			@SuppressWarnings("resource")
+			BufferedReader br = new BufferedReader(new FileReader(filename));
+			StringBuilder sb = new StringBuilder();
+			String line = br.readLine();
+			while (line != null) {
+				sb.append(line);
+				line = br.readLine();
+				System.out.println("value " + line);
+
+			}
+			result = sb.toString();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+
+	}
+	
+	public static JsonData getDataJson(String JsonFile) {
+		String json = readFile(JsonFile);
+		return new Gson().fromJson(json, JsonData.class);
+	}
+	
+	
 }
